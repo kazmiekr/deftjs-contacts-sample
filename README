@@ -1,1 +1,3 @@
 This is a sample application using DeftJS and ExtJS.
+
+It currently requires that you have /extjs4 in your webroot.

@@ -10,7 +10,7 @@ Ext.define( 'MyApp.controllers.ListViewController', {
     		listeners: {
     			select: 'onSelect'
     		}
-    	},
+		},
     	refreshButton: {
     		click: 'onRefreshClick'
     	}
@@ -21,7 +21,6 @@ Ext.define( 'MyApp.controllers.ListViewController', {
     },
     onSelect: function(theView, record, index, eOpts){
     	console.log('MyApp.controllers.ListViewController.onSelect()');
-        console.log(this.getView().hasListener('userSelected123'));
-    	this.getView().fireEvent('userSelected123', record);
+    	this.getView().fireEvent('userSelected', record);
     }
 });
